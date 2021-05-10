@@ -26,3 +26,18 @@ function likes(names){
          l > 1 ? `${names[0]} and ${names[1]} like this`:
          `${names[0]} likes this`:
          'no one likes this';
+
+Cp2. In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+Solution1.Cp2
+function makeNegative(num) {
+ return num > 0 ? -num : num
+  }                                             **use console.log for output
+
+Solution2.Cp2
+const makeNegative2 = n => n<0?n: n==0 ? 0 :-n; **use console.log for output
+
+Solution3.Cp2
+function makeNegative(num) {
+    return -Math.abs(num);
+}                                               **use console.log for output
